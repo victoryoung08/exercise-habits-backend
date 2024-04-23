@@ -8,6 +8,11 @@ export const HeroBlock: Block = {
   },
   fields: [
     {
+      name: "badgeText",
+      label: "H1 Badge Text",
+      type: "text",
+    },
+    {
       name: "heading",
       label: "Heading",
       type: "text",
@@ -48,18 +53,7 @@ export const HeroBlock: Block = {
     {
       name: "body",
       label: "Body",
-      type: "richText",
-    },
-    {
-      name: "bodyList",
-      label: "Body List",
-      type: "array",
-      fields: [
-        {
-          name: "list",
-          type: "text",
-        },
-      ],
+      type: "text",
     },
     {
       name: "heroImage",
