@@ -62,6 +62,12 @@ export const HeroBlock: Block = {
       relationTo: "media",
     },
     {
+      name: "secondaryImage",
+      label: "Secondary Image",
+      type: "upload",
+      relationTo: "media",
+    },
+    {
       name: "primaryButtonText",
       label: "Primary Button Text",
       type: "text",
@@ -80,6 +86,11 @@ export const HeroBlock: Block = {
       name: "secondaryButtonURL",
       label: "Secondary Button URL",
       type: "text",
+    },
+    {
+      name: "form",
+      label: "Form Available?",
+      type: "checkbox",
     },
   ],
 };

@@ -4,6 +4,10 @@ import { FeatureCards } from "../blocks/FeatureCards";
 import { HeroBlock } from "../blocks/HeroBlock";
 import { ImageWithText } from "../blocks/ImageWithText";
 import { ImageSlider } from "../blocks/ImageSlider";
+import { StaticGrid } from "../blocks/StaticGrid";
+import { FeatureRows } from "../blocks/FeatureRows";
+import { AccordionBlock } from "../blocks/AccordionBlock";
+import { SplitImageSlider } from "../blocks/SplitImageSlider";
 
 export const Services: CollectionConfig = {
   slug: "services",
@@ -13,6 +17,9 @@ export const Services: CollectionConfig = {
   },
   access: {
     read: () => true,
+    update: () => true,
+    create: () => true,
+    delete: () => true,
   },
   fields: [
     {
@@ -40,6 +47,10 @@ export const Services: CollectionConfig = {
         HeroBlock,
         ImageWithText,
         ImageSlider,
+        StaticGrid,
+        FeatureRows,
+        AccordionBlock,
+        SplitImageSlider,
       ],
     },
   ],
